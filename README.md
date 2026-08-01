@@ -1,16 +1,15 @@
-## Hi there 👋
+# Hey, I'm Roshan 👋
 
-<!--
-**Roshan6335/Roshan6335** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+I'm currently in Class 10, and I'm deeply into learning tech and AI. I'm still learning — but I'm learning by building, not just reading.
 
-Here are some ideas to get you started:
+💻 I'd call myself a pretty good vibecoder — I enjoy the process of building things with code, figuring stuff out, and turning ideas into real projects.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+🔭 Right now, I'm working on:
+- **DNA-ai** — an AI-based project I'm building
+- **Pariksha-saathi** — an exam prep tool for CBSE students
+
+🌱 I'm genuinely passionate about this field. Tech and AI aren't just subjects for me — it's what I want to spend my future on.
+
+🎯 My long-term goal is to start my own company someday, in EdTech, AI, or something in that space — building products that actually help people.
+
+📫 Reach me: contactofficialroshan@gmail.com
