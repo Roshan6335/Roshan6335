@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 660" width="420" height="660" role="img" aria-label="Roshan developer ID card">
+<title>Roshan — swinging developer ID</title>
+<defs>
+<style type="text/css"><![CDATA[
+text{font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace}
+@keyframes settle{0%{transform:rotate(0deg) translateY(-660px)}18%{transform:rotate(0deg) translateY(0)}30%{transform:rotate(11deg)}46%{transform:rotate(-8deg)}62%{transform:rotate(5deg)}78%{transform:rotate(-3deg)}92%{transform:rotate(1.2deg)}100%{transform:rotate(0deg)}}
+@keyframes sway{0%,100%{transform:rotate(-2.6deg)}50%{transform:rotate(2.6deg)}}
+@keyframes cardWobble{0%,100%{transform:rotate(1.3deg)}50%{transform:rotate(-1.3deg)}}
+@keyframes shine{0%{transform:translateX(-340px) skewX(-18deg)}55%,100%{transform:translateX(420px) skewX(-18deg)}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes pulse{0%,100%{opacity:.5}50%{opacity:1}}
+.settle{transform-origin:210px 6px;animation:settle 3.2s cubic-bezier(.34,1.1,.5,1) forwards}
+.sway{transform-origin:210px 6px;animation:sway 4.4s ease-in-out 3.2s infinite}
+.wob{transform-origin:210px 300px;animation:cardWobble 4.4s ease-in-out 3.2s infinite}
+.shine{animation:shine 4.6s ease-in-out 3.4s infinite}
+.fi{opacity:0;animation:fadeIn .5s ease forwards}
+.pl{transform-box:fill-box;transform-origin:center;animation:pulse 2.2s ease-in-out infinite}
+]]></style>
+<linearGradient id="strapg" x1="0" y1="0" x2="1" y2="0">
+  <stop offset="0%" stop-color="#233043"/><stop offset="50%" stop-color="#5b8def"/><stop offset="100%" stop-color="#233043"/>
+</linearGradient>
+<linearGradient id="cardg" x1="0" y1="0" x2="1" y2="1">
+  <stop offset="0%" stop-color="#141a23"/><stop offset="100%" stop-color="#0d1117"/>
+</linearGradient>
+<linearGradient id="cardborder" x1="0" y1="0" x2="1" y2="1">
+  <stop offset="0%"><animate attributeName="stop-color" values="#5b8def;#38bdf8;#5b8def" dur="6s" repeatCount="indefinite"/></stop>
+  <stop offset="100%"><animate attributeName="stop-color" values="#38bdf8;#5b8def;#38bdf8" dur="6s" repeatCount="indefinite"/></stop>
+</linearGradient>
+<linearGradient id="metal" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0%" stop-color="#c8ccd6"/><stop offset="45%" stop-color="#8a90a0"/><stop offset="55%" stop-color="#6a7080"/><stop offset="100%" stop-color="#9aa0b0"/>
+</linearGradient>
+<linearGradient id="shineg" x1="0" y1="0" x2="1" y2="0">
+  <stop offset="0%" stop-color="#fff" stop-opacity="0"/><stop offset="50%" stop-color="#fff" stop-opacity=".12"/><stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+</linearGradient>
+<clipPath id="cardclip"><rect x="60" y="150" width="300" height="410" rx="20"/></clipPath>
+</defs>
+
+<g class="settle">
+  <!-- clip loop -->
+  <rect x="198" y="0" width="24" height="14" rx="6" fill="#6a7080"/>
+  <circle cx="210" cy="16" r="9" fill="none" stroke="url(#metal)" stroke-width="4"/>
+
+  <g class="sway">
+    <!-- strap -->
+    <rect x="196" y="20" width="28" height="290" fill="url(#strapg)"/>
+    <text x="210" y="90" font-size="10" fill="#0d1117" font-weight="bold" text-anchor="middle" transform="rotate(90,210,90)" letter-spacing="1">ROSHAN · DEV</text>
+    <text x="210" y="220" font-size="10" fill="#0d1117" font-weight="bold" text-anchor="middle" transform="rotate(90,210,220)" letter-spacing="1">AI · TECH</text>
+
+    <!-- metal clasp -->
+    <rect x="192" y="298" width="36" height="20" rx="4" fill="url(#metal)"/>
+    <circle cx="210" cy="322" r="8" fill="none" stroke="#8a90a0" stroke-width="4"/>
+
+    <g class="wob">
+      <!-- card -->
+      <rect x="58" y="148" width="304" height="414" rx="22" fill="url(#cardborder)"/>
+      <rect x="62" y="152" width="296" height="406" rx="19" fill="url(#cardg)"/>
+
+      <g clip-path="url(#cardclip)">
+        <!-- header strip -->
+        <rect x="60" y="150" width="300" height="46" fill="#131a24"/>
+        <text class="fi" style="animation-delay:.1s" x="80" y="178" font-size="12" fill="#5b8def" letter-spacing="2">DEVELOPER ID</text>
+        <text class="fi" style="animation-delay:.15s" x="340" y="178" font-size="11" fill="#4a5568" text-anchor="end">DEV-6335</text>
+
+        <!-- avatar -->
+        <circle class="fi" style="animation-delay:.25s" cx="210" cy="270" r="46" fill="#0d1117" stroke="url(#accent2)" stroke-width="2"/>
+        <linearGradient id="accent2" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#5b8def"/><stop offset="100%" stop-color="#38bdf8"/>
+        </linearGradient>
+        <text class="fi" style="animation-delay:.3s" x="210" y="282" font-size="34" font-weight="bold" fill="#5b8def" text-anchor="middle">R</text>
+
+        <!-- name -->
+        <text class="fi" style="animation-delay:.4s" x="210" y="352" font-size="22" font-weight="bold" fill="#e6edf3" text-anchor="middle">Roshan</text>
+        <text class="fi" style="animation-delay:.48s" x="210" y="374" font-size="12.5" fill="#8b95a5" text-anchor="middle" letter-spacing=".5">Frontend / AI Developer</text>
+
+        <!-- divider -->
+        <rect class="fi" style="animation-delay:.55s" x="90" y="392" width="240" height="1" fill="#232b36"/>
+
+        <!-- status -->
+        <circle class="fi pl" style="animation-delay:.65s" cx="100" cy="414" r="4" fill="#3fb950"/>
+        <text class="fi" style="animation-delay:.65s" x="112" y="418" font-size="11.5" fill="#9aa5b5">open to collaborate</text>
+
+        <!-- tags -->
+        <g class="fi" style="animation-delay:.75s">
+          <rect x="88" y="434" width="60" height="24" rx="12" fill="#0d1117" stroke="#5b8def" stroke-opacity=".5"/>
+          <text x="118" y="450" font-size="10.5" fill="#5b8def" text-anchor="middle">Python</text>
+          <rect x="154" y="434" width="52" height="24" rx="12" fill="#0d1117" stroke="#38bdf8" stroke-opacity=".5"/>
+          <text x="180" y="450" font-size="10.5" fill="#38bdf8" text-anchor="middle">JS</text>
+          <rect x="212" y="434" width="52" height="24" rx="12" fill="#0d1117" stroke="#5b8def" stroke-opacity=".5"/>
+          <text x="238" y="450" font-size="10.5" fill="#5b8def" text-anchor="middle">AI</text>
+          <rect x="270" y="434" width="60" height="24" rx="12" fill="#0d1117" stroke="#38bdf8" stroke-opacity=".5"/>
+          <text x="300" y="450" font-size="10.5" fill="#38bdf8" text-anchor="middle">EdTech</text>
+        </g>
+
+        <!-- barcode -->
+        <g class="fi" style="animation-delay:.85s" fill="#3a4454">
+          <rect x="80" y="500" width="2" height="34"/><rect x="86" y="500" width="4" height="34"/><rect x="94" y="500" width="2" height="34"/>
+          <rect x="100" y="500" width="3" height="34"/><rect x="107" y="500" width="2" height="34"/><rect x="113" y="500" width="5" height="34"/>
+          <rect x="122" y="500" width="2" height="34"/><rect x="128" y="500" width="3" height="34"/><rect x="135" y="500" width="2" height="34"/>
+          <rect x="141" y="500" width="4" height="34"/><rect x="149" y="500" width="2" height="34"/><rect x="155" y="500" width="3" height="34"/>
+          <rect x="162" y="500" width="2" height="34"/><rect x="168" y="500" width="5" height="34"/><rect x="177" y="500" width="2" height="34"/>
+          <rect x="183" y="500" width="3" height="34"/><rect x="190" y="500" width="2" height="34"/><rect x="196" y="500" width="4" height="34"/>
+          <rect x="204" y="500" width="2" height="34"/><rect x="210" y="500" width="3" height="34"/><rect x="217" y="500" width="2" height="34"/>
+          <rect x="223" y="500" width="5" height="34"/><rect x="232" y="500" width="2" height="34"/><rect x="238" y="500" width="3" height="34"/>
+          <rect x="245" y="500" width="2" height="34"/><rect x="251" y="500" width="4" height="34"/><rect x="259" y="500" width="2" height="34"/>
+          <rect x="265" y="500" width="3" height="34"/><rect x="272" y="500" width="2" height="34"/><rect x="278" y="500" width="5" height="34"/>
+          <rect x="287" y="500" width="2" height="34"/><rect x="293" y="500" width="3" height="34"/><rect x="300" y="500" width="2" height="34"/>
+          <rect x="306" y="500" width="4" height="34"/><rect x="314" y="500" width="2" height="34"/><rect x="320" y="500" width="3" height="34"/>
+        </g>
+        <text class="fi" style="animation-delay:.95s" x="210" y="548" font-size="9.5" fill="#4a5568" text-anchor="middle" letter-spacing="1">GITHUB.COM/ROSHAN6335</text>
+
+        <!-- footer -->
+        <rect x="60" y="558" width="300" height="0.5" fill="#232b36"/>
+        <text class="fi" style="animation-delay:1.05s" x="210" y="580" font-size="9.5" fill="#5b8def" text-anchor="middle" font-style="italic">"still learning, still building"</text>
+
+        <!-- glossy sweep -->
+        <rect class="shine" x="60" y="150" width="80" height="410" fill="url(#shineg)"/>
+      </g>
+    </g>
+  </g>
+</g>
+</svg>
