@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 660" width="420" height="660" role="img" aria-label="Roshan swinging developer ID badge">
+<title>Roshan — developer identity card</title>
+<defs>
+<style><![CDATA[
+text{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace}
+@keyframes settle{0%{transform:rotate(0deg) translateY(-660px)}18%{transform:rotate(0deg) translateY(0)}30%{transform:rotate(12deg)}46%{transform:rotate(-8deg)}62%{transform:rotate(5deg)}78%{transform:rotate(-3deg)}92%{transform:rotate(1deg)}100%{transform:rotate(0)}}
+@keyframes sway{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(3deg)}}
+@keyframes wob{0%,100%{transform:rotate(1.4deg)}50%{transform:rotate(-1.4deg)}}
+@keyframes shine{0%{transform:translateX(-340px) skewX(-18deg)}55%,100%{transform:translateX(420px) skewX(-18deg)}}
+@keyframes pulse{0%,100%{opacity:.6}50%{opacity:1}}
+.settle{transform-origin:210px 6px;animation:settle 3.4s cubic-bezier(.34,1.1,.5,1) forwards}
+.sway{transform-origin:210px 6px;animation:sway 4.2s ease-in-out 3.4s infinite}
+.wob{transform-origin:210px 300px;animation:wob 4.2s ease-in-out 3.4s infinite}
+.shine{animation:shine 4.5s ease-in-out 3.6s infinite}
+.pulse{animation:pulse 2.6s ease-in-out infinite}
+]]></style>
+<linearGradient id="strap" x1="0" y1="0" x2="1" y2="0">
+  <stop offset="0%" stop-color="#7c3aed"/><stop offset="50%" stop-color="#ff7eb6"/><stop offset="100%" stop-color="#7c3aed"/>
+</linearGradient>
+<linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+  <stop offset="0%" stop-color="#16111f"/><stop offset="100%" stop-color="#0e1117"/>
+</linearGradient>
+<linearGradient id="edge" x1="0" y1="0" x2="1" y2="1">
+  <stop offset="0%" stop-color="#ff7eb6"><animate attributeName="stop-color" values="#ff7eb6;#c084fc;#8b5cf6;#ff7eb6" dur="6s" repeatCount="indefinite"/></stop>
+  <stop offset="100%" stop-color="#8b5cf6"><animate attributeName="stop-color" values="#8b5cf6;#7dd3fc;#ff7eb6;#8b5cf6" dur="6s" repeatCount="indefinite"/></stop>
+</linearGradient>
+<linearGradient id="shineg" x1="0" y1="0" x2="1" y2="0">
+  <stop offset="0%" stop-color="#fff" stop-opacity="0"/>
+  <stop offset="50%" stop-color="#fff" stop-opacity=".12"/>
+  <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+</linearGradient>
+<radialGradient id="glow"><stop offset="0%" stop-color="#8b5cf6" stop-opacity=".18"/><stop offset="100%" stop-color="#8b5cf6" stop-opacity="0"/></radialGradient>
+<filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#000" flood-opacity=".5"/></filter>
+<clipPath id="cc"><rect x="82" y="298" width="256" height="330" rx="20"/></clipPath>
+</defs>
+
+<circle cx="210" cy="430" r="230" fill="url(#glow)"><animate attributeName="r" values="230;248;230" dur="5s" repeatCount="indefinite"/></circle>
+
+<g class="settle">
+  <rect x="196" y="0" width="28" height="88" rx="14" fill="#171b23" stroke="#454b58"/>
+  <path d="M205 6h10v70h-10z" fill="url(#strap)" opacity=".82"/>
+  <rect x="175" y="68" width="70" height="32" rx="16" fill="#0d1117" stroke="#5a6475"/>
+  <circle cx="210" cy="84" r="11" fill="#2a3140" stroke="#8b5cf6" stroke-width="2"/>
+  <rect x="82" y="298" width="256" height="330" rx="20" fill="url(#card)" stroke="url(#edge)" stroke-width="2.4" filter="url(#shadow)"/>
+  <g clip-path="url(#cc)">
+    <rect class="shine" x="-340" y="298" width="120" height="330" fill="url(#shineg)" opacity=".9"/>
+  </g>
+
+  <text x="102" y="330" font-size="9.5" fill="#6f7785" letter-spacing="2.2">DEVELOPER ID</text>
+  <text x="318" y="330" text-anchor="end" font-size="9" fill="#4f5868">DEV-6335</text>
+
+  <circle cx="210" cy="382" r="44" fill="#11151d" stroke="#7dd3fc" stroke-width="1.6"/>
+  <text x="210" y="397" text-anchor="middle" font-size="42" font-weight="800" fill="#7dd3fc">R</text>
+
+  <text x="210" y="454" text-anchor="middle" font-size="24" font-weight="800" fill="#f5f7fa">Roshan</text>
+  <text x="210" y="476" text-anchor="middle" font-size="11" fill="#8e97a6">AI / EdTech Builder</text>
+
+  <line x1="106" y1="498" x2="314" y2="498" stroke="#2a3140"/>
+
+  <circle cx="118" cy="519" r="4" fill="#35d07f" class="pulse"/>
+  <text x="130" y="523" font-size="10.5" fill="#a7b0be">Open to collaborate</text>
+
+  <rect x="108" y="546" width="54" height="22" rx="11" fill="#0d1117" stroke="#7dd3fc"/>
+  <text x="135" y="560" text-anchor="middle" font-size="9" fill="#7dd3fc">JS</text>
+  <rect x="170" y="546" width="76" height="22" rx="11" fill="#0d1117" stroke="#c084fc"/>
+  <text x="208" y="560" text-anchor="middle" font-size="9" fill="#c084fc">TypeScript</text>
+  <rect x="254" y="546" width="56" height="22" rx="11" fill="#0d1117" stroke="#ff7eb6"/>
+  <text x="282" y="560" text-anchor="middle" font-size="9" fill="#ff7eb6">AI</text>
+
+  <text x="210" y="596" text-anchor="middle" font-size="9" fill="#657083">CLASS 10 · BUILDING IN AI / TECH</text>
+
+  <g transform="translate(106 607)">
+    <rect x="0" y="0" width="208" height="10" rx="5" fill="#1a202b"/>
+    <rect x="0" y="0" width="148" height="10" rx="5" fill="#8b5cf6"/>
+    <rect x="0" y="0" width="148" height="10" rx="5" fill="none" stroke="#ff7eb6" stroke-opacity=".35"/>
+  </g>
+
+  <text x="210" y="622" text-anchor="middle" font-size="7.8" fill="#434c5a" letter-spacing="2">GITHUB.COM/ROSHAN6335</text>
+</g>
+</svg>
